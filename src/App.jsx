@@ -1,13 +1,22 @@
 import { useState } from 'react'
+import Header from './Components/Header'
+import HomePage from './Components/HomePage'
 
 
 function App() {
- 
 
   return (
-    <>
-      <h1 className='text-green-500'>Server is running now...!</h1>
-    </>
+    <div className='flex flex-col max-w-[1000px] mx-auto w-full'>
+      <section className='min-h-screen flex flex-col'>
+        <Header />
+
+        <HomePage />
+      </section>
+
+      <footer>
+
+      </footer>
+    </div>
   )
 }
 
